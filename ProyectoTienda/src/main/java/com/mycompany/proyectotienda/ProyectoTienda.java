@@ -27,7 +27,7 @@ public class ProyectoTienda {
 
         do {
             try {
-                System.out.println("#############MENU####################");
+                System.out.println("############# MENU ###################");
                 System.out.println("1.Tienda");
                 System.out.println("2.Empleados");
                 System.out.println("3.Usuarios");
@@ -69,7 +69,7 @@ public class ProyectoTienda {
 
         do {
             try {
-                System.out.println("#############MENU####################");
+                System.out.println("############# MENU ###################");
                 System.out.println("1.Agregar");
                 System.out.println("2.Consultar");
                 System.out.println("3.Actualizar");
@@ -111,7 +111,7 @@ public class ProyectoTienda {
 
         do {
             try {
-                System.out.println("#############MENU####################");
+                System.out.println("############# MENU ###################");
                 System.out.println("1.Ingresar nuevo empleado");
                 System.out.println("2.Mostrar todos los empleados");
                 System.out.println("3.Salir");
@@ -125,15 +125,15 @@ public class ProyectoTienda {
                         break;
                     case 2:
                         for (int i = 0; i < empleados.size(); i++) {
-                            System.out.println("-----Lista empleados-------");
+                            System.out.println("######## Lista empleados ######");
                             System.out.println(i + ". " + empleados.get(i));
-                            System.out.println("---------------------------");
+                            System.out.println("##############################");
                         }
 
                         if (empleados.isEmpty()) {
-                            System.out.println("-----Lista empleados-------");
+                            System.out.println("####### Lista empleados ######");
                             System.out.println("En el momento no exiten empleados ingresados");
-                            System.out.println("---------------------------");
+                            System.out.println("##############################");
                         }
 
                         break;
@@ -164,26 +164,31 @@ public class ProyectoTienda {
                 int id = 0;
 
                 //mensaje en consola
-                System.out.println("________________MENU EMPLEADOS__________________");
+                System.out.println("############## MENU EMPLEADOS ###############");
                 System.out.println("1.Administrador");
                 System.out.println("2.Vendedor");
                 System.out.println("3.Cajero");
                 System.out.println("4.Salir");
-                System.out.println("________________________________________________");
+                System.out.println("##############################################");
 
                 menu = scan.nextInt();
+                scan.nextLine();
 
                 switch (menu) {
                     case 1:
                         //ingresar datos
-                        System.out.println("Ingresa el valor de la hora");
-                        valorHora = scan.nextFloat();
+
                         System.out.println("Ingresa el nombre");
                         nombre = scan.nextLine();
-                        System.out.println("Ingresa el numero del telefono");
-                        numTelefono = scan.nextInt();
                         System.out.println("Ingresa el Id");
                         id = scan.nextInt();
+                        scan.nextLine();
+                        System.out.println("Ingresa el numero del telefono");
+                        numTelefono = scan.nextInt();
+                        scan.nextLine();
+                        System.out.println("Ingresa el valor de la hora");
+                        valorHora = scan.nextFloat();
+                        scan.nextLine();
 
                         //inicializar objeto
                         Administrador administrador = new Administrador(valorHora, nombre, numTelefono, id);
@@ -193,16 +198,19 @@ public class ProyectoTienda {
                         break;
                     case 2:
                         //ingresar datos
+                        System.out.println("Ingresa el nombre");
+                        nombre = scan.nextLine();
+                        scan.nextInt();
+                        System.out.println("Ingresa el Id");
+                        id = scan.nextInt();
+                        System.out.println("Ingresa el numero del telefono");
+                        numTelefono = scan.nextInt();
+                        scan.nextFloat();
+                        System.out.println("Ingresa el valor de la hora");
+                        valorHora = scan.nextFloat();
+                        scan.nextInt();
                         System.out.println("Ingrese numero de ventas: ");
                         int numVentas = scan.nextInt();
-                        System.out.println("Ingrese su valor hora: ");
-                        valorHora = scan.nextFloat();
-                        System.out.println("ingrese su nombre: ");
-                        nombre = scan.nextLine();
-                        System.out.println("Ingrese el numero de telefono: ");
-                        numTelefono = scan.nextInt();
-                        System.out.println("Ingrese su número de id: ");
-                        id = scan.nextInt();
 
                         //inicializar objeto
                         Vendedor vendedor = new Vendedor(valorHora, nombre, numTelefono, id);
@@ -211,14 +219,16 @@ public class ProyectoTienda {
                         break;
                     case 3:
                         //ingresar datos
-                        System.out.println("Ingresa el valor de la hora");
-                        valorHora = scan.nextFloat();
                         System.out.println("Ingresa el nombre");
                         nombre = scan.nextLine();
-                        System.out.println("Ingresa el numero del telefono");
-                        numTelefono = scan.nextInt();
+                        scan.nextInt();
                         System.out.println("Ingresa el Id");
                         id = scan.nextInt();
+                        System.out.println("Ingresa el numero del telefono");
+                        numTelefono = scan.nextInt();
+                        scan.nextFloat();
+                        System.out.println("Ingresa el valor de la hora");
+                        valorHora = scan.nextFloat();
 
                         //inicializar objeto
                         Cajero cajero = new Cajero(valorHora, nombre, numTelefono, id);
@@ -244,11 +254,11 @@ public class ProyectoTienda {
 
         do {
             try {
-                System.out.println("_____________MENU USUARIOS__________________");
+                System.out.println("############# MENU USUARIOS ##############");
                 System.out.println("1.Agregar Usuario");
-                System.out.println("2.ver Usuarios");
+                System.out.println("2.Ver Usuarios");
                 System.out.println("3.Salir");
-                System.out.println("____________________________________________");
+                System.out.println("##########################################");
 
                 menu = scan.nextInt();
                 scan.nextLine();
@@ -257,6 +267,7 @@ public class ProyectoTienda {
                     case 1:
                         System.out.println("Ingrese el nombre");
                         String nombre = scan.nextLine();
+                        scan.nextInt();
                         System.out.println("Ingrese la cedula");
                         int cedula = scan.nextInt();
 
@@ -264,11 +275,11 @@ public class ProyectoTienda {
                         usuarios.add(usuario);
                         break;
                     case 2:
-                        System.out.println("__________________Lista de usuarios_______________");
+                        System.out.println("############# Lista de usuarios #############");
                         for (int i = 0; i < usuarios.size(); i++) {
                             System.out.println(i + ". " + usuarios.get(i).toString());
                         }
-                        System.out.println("__________________________________________________");
+                        System.out.println("##############################################");
                         break;
                     default:
                         System.out.println("Ingresa la opcion correcta");

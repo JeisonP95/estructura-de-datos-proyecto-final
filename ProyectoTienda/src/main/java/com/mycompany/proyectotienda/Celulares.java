@@ -13,24 +13,24 @@ public class Celulares extends Producto implements IAplicacion {
     //metodos
     @Override
     public void realizarVenta() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public String AbrirApp() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public String ActualizarApp() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public String EliminarApp() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet.");
     }
-    
+
     //getter and setters
     public int getCantidadSim() {
         return cantidadSim;
@@ -42,7 +42,7 @@ public class Celulares extends Producto implements IAplicacion {
 
     @Override
     public String toString() {
-        return "Celulares{" + "cantidadSim=" + cantidadSim + '}';
+        return "CELULARES" + "\nCantidad Sim: " + cantidadSim + "\nMarca: " + getNombre() + "\nAlmacenamiento: " + getAlmacenamiento()  + "\nRam: " + getRam() + "\nColor: " + getColor() + "\nPrecio: " + getPrecio() ;
     }
-    
+
 }

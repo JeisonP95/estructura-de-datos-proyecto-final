@@ -8,12 +8,12 @@ public class Cajero extends Empleados implements ITrabajable{
 
     @Override
     public void salario() {
-        System.out.println("por ahora nada");
+        System.out.println("Por ahora nada");
     }
     
     @Override
     public String ejecutarTrabajo() {
-        return "por ahora nada";
+        return "Por ahora nada";
     }
     
 }

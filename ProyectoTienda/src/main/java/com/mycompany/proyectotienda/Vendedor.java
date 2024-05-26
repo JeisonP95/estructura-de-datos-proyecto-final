@@ -13,16 +13,16 @@ public class Vendedor extends Empleados implements ITrabajable{
     //metodos
     @Override
     public void salario() {
-        System.out.println("por ahora nada");
+        System.out.println("Por ahora nada");
     }
     
     @Override
     public String ejecutarTrabajo() {
-        return "por ahora nada";
+        return "Por ahora nada";
     }
 
     public void comision() {
-        System.out.println("por ahora nada");
+        System.out.println("Por ahora nada");
     }
 
     //getters and setters

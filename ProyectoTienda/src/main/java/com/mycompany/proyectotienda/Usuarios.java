@@ -1,7 +1,5 @@
 package com.mycompany.proyectotienda;
 
-import java.util.ArrayList;
-
 public class Usuarios {
 
     private String nombre;
