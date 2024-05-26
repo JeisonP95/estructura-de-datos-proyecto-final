@@ -200,18 +200,18 @@ public class ProyectoTienda {
                         //ingresar datos
                         System.out.println("Ingresa el nombre");
                         nombre = scan.nextLine();
-                        scan.nextInt();
                         System.out.println("Ingresa el Id");
                         id = scan.nextInt();
+                        scan.nextLine();
                         System.out.println("Ingresa el numero del telefono");
                         numTelefono = scan.nextInt();
-                        scan.nextFloat();
+                        scan.nextLine();
                         System.out.println("Ingresa el valor de la hora");
                         valorHora = scan.nextFloat();
-                        scan.nextInt();
+                        scan.nextLine();
                         System.out.println("Ingrese numero de ventas: ");
                         int numVentas = scan.nextInt();
-
+                        scan.nextLine();
                         //inicializar objeto
                         Vendedor vendedor = new Vendedor(valorHora, nombre, numTelefono, id);
                         //guardar en la lista
@@ -221,14 +221,15 @@ public class ProyectoTienda {
                         //ingresar datos
                         System.out.println("Ingresa el nombre");
                         nombre = scan.nextLine();
-                        scan.nextInt();
                         System.out.println("Ingresa el Id");
                         id = scan.nextInt();
+                        scan.nextLine();
                         System.out.println("Ingresa el numero del telefono");
                         numTelefono = scan.nextInt();
-                        scan.nextFloat();
+                        scan.nextLine();
                         System.out.println("Ingresa el valor de la hora");
                         valorHora = scan.nextFloat();
+                        scan.nextLine();
 
                         //inicializar objeto
                         Cajero cajero = new Cajero(valorHora, nombre, numTelefono, id);
