@@ -76,4 +76,10 @@ public class Celulares {
         this.cantidadSim = cantidadSim;
     }
 
+    @Override
+    public String toString() {
+        return "CELULARES" + "\nMarca: " + nombre + "\nCelular de: " +cantidadSim+ " Sim " + "\nColor: " + color +"\nAlmacenamiento: " + almacenamiento + " GB" +"\nRam: " + ram + "\nCodigo: " + codigo + "\nPrecio: " + precio;
+    }
+    
+
 }

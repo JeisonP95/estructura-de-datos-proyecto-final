@@ -12,13 +12,13 @@ public class InventarioTiendaCelulares {
 
         do {
             try {
-                System.out.println("############# MENU CELULARES###################");
-                System.out.println("1.Agregar Celular");
-                System.out.println("2.ver celulares en venta");
-                System.out.println("3.ver celulares vendidos");
+                System.out.println("############# MENU CELULARES ###################");
+                System.out.println("1.Agregar celular");
+                System.out.println("2.Ver celulares en venta");
+                System.out.println("3.Ver celulares vendidos");
                 System.out.println("4.Actualizar celular");
                 System.out.println("5.Eliminar celular");
-                System.out.println("6.vender celular");
+                System.out.println("6.Vender celular");
                 System.out.println("7.Salir");
                 System.out.println("#####################################");
 
@@ -44,7 +44,7 @@ public class InventarioTiendaCelulares {
                         tienda.vender();
                         break;
                     case 7:
-                        System.out.println("Gracias por utilizar el programa :)");
+                        System.out.println("Gracias por utilizar el programa");
                         break;
                     default:
                         System.out.println("Ingresa la opcion correcta");
