@@ -50,7 +50,7 @@ public class InventarioTiendaCelulares {
                         System.out.println("Ingresa la opcion correcta");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Esta opción no es válida. Por favor, ingrese un número.");
+                System.out.println("Esta opcion no es valida. Por favor, ingrese un numero.");
                 scan.next();
             }
         } while (menu != 7);
