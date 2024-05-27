@@ -78,7 +78,7 @@ public class Celulares {
 
     @Override
     public String toString() {
-        return "CELULARES" + "\nMarca: " + nombre + "\nCelular de: " +cantidadSim+ " Sim " + "\nColor: " + color +"\nAlmacenamiento: " + almacenamiento + " GB" +"\nRam: " + ram + "\nCodigo: " + codigo + "\nPrecio: " + precio;
+        return "CELULARES" + "\nMarca: " + nombre + "\nCelular de: " +cantidadSim+ " Sim " + "\nColor: " + color +"\nAlmacenamiento: " + almacenamiento + " GB" +"\nRam: " + ram + " GB" + "\nCodigo: " + codigo + "\nPrecio: $" + precio;
     }
     
 
