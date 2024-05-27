@@ -1,4 +1,4 @@
-package com.mycompany.inventariotiendacelulares;
+ mpackage com.mycompany.inventariotiendacelulares;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
